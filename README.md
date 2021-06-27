@@ -14,3 +14,7 @@ https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-
 
 # in case of error (* failed to open vchiq instance)
 https://randomadult.com/raspberry-pi-failed-open-vchiq-instance-solved/
+
+
+# detect cat face in real-time
+https://www.geeksforgeeks.org/detect-cat-faces-in-real-time-using-python-opencv/
