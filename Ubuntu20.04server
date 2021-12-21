@@ -1,3 +1,12 @@
+##################################3
+##################################
+
+NOTE: sitll not solveing the problem of can not detecte the camera in ubuntu20.04
+
+##################################
+##################################
+
+
 ## follow tutorial
 https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
 # note, dont forget to change network-config to set wifi (wifi need to be "sudo reboot" once after first activation)
@@ -46,8 +55,7 @@ ls -al /dev/ | grep video # camera is video0
 vcgencmd get_camera
 
 
-## camera setup in ubuntu
+## camera setup in ubuntu ## not solved
 https://chuckmails.medium.com/enable-pi-camera-with-raspberry-pi4-ubuntu-20-10-327208312f6e
-## incase error in raspberrypi-kernel installation
-sudo dpkg --remove --force-remove-reinstreq raspberrypi-kernel
-sudo apt-get install raspberrypi-kernel
+
+
