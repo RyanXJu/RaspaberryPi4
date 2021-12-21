@@ -1,0 +1,48 @@
+## follow tutorial
+https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
+# note, dont forget to change network-config to set wifi (wifi need to be "sudo reboot" once after first activation)
+# python3.8 is pre-installed in ubuntu20
+
+
+## after ubuntu is successfully installed
+sudo apt-get upgrade  #this will take a while
+sudo apt-get update
+
+## use cemara
+## install raspi-config
+https://ubuntu-mate.community/t/install-raspi-config-on-ubuntu-mate-20-10-and-higher/23974
+    Open the :terminal: Terminal application. Type sudo su (Make sure you have sudo rights or this will not work!) to run as root.
+
+    Copy and paste...
+
+echo "deb http://archive.raspberrypi.org/debian/ buster main" >> /etc/apt/sources.list
+
+This adds the repository to the sources list.
+
+    Copy and paste this..
+
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7FA3303E
+
+Adds the keys to something.
+
+    Now copy and paste this or type it out yourself to install the main package along with it's dependencies.
+
+apt-get update && apt-get install raspi-config
+
+## in case firmware error
+##https://raspberrypi.stackexchange.com/questions/164/how-do-i-update-software-and-firmware
+sudo apt-get install rpi-update
+sudo rpi-update
+# reboot to activate the new firmware
+sudo reboot
+
+## activate cemara
+sudo raspi-config
+# in interfacing options, enable camera
+
+# check video dev
+ls -al /dev/ | grep video
+
+
+
+
