@@ -48,4 +48,6 @@ vcgencmd get_camera
 
 ## camera setup in ubuntu
 https://chuckmails.medium.com/enable-pi-camera-with-raspberry-pi4-ubuntu-20-10-327208312f6e
-
+## incase error in raspberrypi-kernel installation
+sudo dpkg --remove --force-remove-reinstreq raspberrypi-kernel
+sudo apt-get install raspberrypi-kernel
