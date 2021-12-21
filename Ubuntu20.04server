@@ -41,7 +41,9 @@ sudo raspi-config
 # in interfacing options, enable camera
 
 # check video dev
-ls -al /dev/ | grep video
+ls -al /dev/ | grep video # camera is video0
+# check supported and detected cameras
+vcgencmd get_camera
 
 
 
