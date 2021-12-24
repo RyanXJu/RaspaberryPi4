@@ -64,4 +64,11 @@ https://askubuntu.com/questions/1250230/how-to-run-a-pi-camera-on-raspberry-pi-4
 According to this response, camera only available on 32bit system
 ######################################################
 
-
+## enable ssh
+sudo apt install openssh-server
+sudo service ssh status    
+sudo service ssh start
+# get ip 
+ifconfig
+# or 
+hostname -I
